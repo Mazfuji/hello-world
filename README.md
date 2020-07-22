@@ -1,4 +1,4 @@
 # hello-world
 New repository
 
-This is the first try at github.
+This is my first try at github.
