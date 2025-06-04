@@ -4,13 +4,15 @@ Simple Flask API responding with JSON `{"message": "Hello World!"}`.
 
 ## Setup
 
-Install dependencies:
+Create and activate a virtual environment, then install dependencies:
 
 ```bash
+python3 -m venv venv
+source venv/bin/activate
 pip install -r requirements.txt
 ```
 
-Run locally with gunicorn:
+Run locally with gunicorn (make sure the virtual environment is active):
 
 ```bash
 ./run_gunicorn.sh
@@ -23,5 +25,6 @@ A sample `hello-world.service` is provided. Install using:
 ```bash
 sudo ./install_service.sh
 ```
-
-The service listens on port 8000.
+Ensure that the virtual environment exists at `/opt/hello-world/venv` and
+contains the required packages before starting the service. The service
+listens on port 8000.
